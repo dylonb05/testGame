@@ -70,8 +70,11 @@ public class Player extends Entity {
         }
     }
     public void draw(Graphics2D g2D) {
+
         g2D.setColor(Color.white);
-        g2D.fillRect(x, y, gp.tileSize, gp.tileSize);
+
+        g2D.drawRect(x, y, gp.tileSize, gp.tileSize);
+
 
         BufferedImage image = null;
 
@@ -109,6 +112,7 @@ public class Player extends Entity {
                 }
                 break;
         }
+
         g2D.drawImage(image, x, y, gp.tileSize, gp.tileSize, null);
 
 
